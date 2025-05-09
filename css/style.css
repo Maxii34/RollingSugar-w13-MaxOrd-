@@ -12,3 +12,18 @@ main{
     aspect-ratio:  1/1;
     object-fit: cover;
 }
+
+.wh-css {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.img-cuadrada {
+
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Mantiene la proporción cuadrada */
+    overflow: hidden;
+}
+
