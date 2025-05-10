@@ -39,10 +39,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="../index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >Inicio</a
                 >
               </li>
@@ -53,14 +50,99 @@
                 <a class="nav-link" href="../pages/productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                <a class="nav-link active" href="../pages/contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main class="container"></main>
+    <main class="container">
+      <section>
+          <div class="container my-5">
+            <div class="row justify-content-center">
+              <div class=" col-12 col-md-6 col-lg-6">
+                <div class="card shadow rounded-4">
+                  <div class="card-body p-4">
+                    <h2 class="mb-4 text-center">Formulario de Contacto</h2>
+                    <form>
+                      <div class="mb-3">
+                        <label for="nombre" class="form-label"
+                          >Nombre completo</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nombre"
+                          name="nombre"
+                          placeholder="Nombre Completo"
+                          minlength="3"
+                          maxlength="80"
+                          required
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="email" class="form-label"
+                          >Correo electrónico</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          placeholder="Correo electrónico"
+                          minlength="5"
+                          maxlength="100"
+                          required
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="telefono" class="form-label"
+                          >Teléfono</label
+                        >
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="telefono"
+                          name="telefono"
+                          placeholder="+54 381 787-6537"
+                          minlength="7"
+                          maxlength="20"
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea
+                          class="form-control"
+                          id="mensaje"
+                          name="mensaje"
+                          rows="2"
+                          placeholder="Deja tu mensaje aqui."
+                          minlength="10"
+                          maxlength="400"
+                          required
+                        ></textarea>
+                      </div>
+
+                      <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">
+                          Enviar
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6"></div>
+            </div>
+          </div>
+      </section>
+    </main>
     <footer class="bg-dark mp-4 text-center text-light">
       <div>
         <h5 class="my-2">Seguinos en:</h5>
