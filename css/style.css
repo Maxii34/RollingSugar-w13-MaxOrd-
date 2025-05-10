@@ -34,3 +34,8 @@ main{
 .zoom-hover:hover {
   transform: scale(1.05);
 }
+
+.img-ingredientes {
+    width: 100%;
+    height: 500px;
+}
