@@ -56,3 +56,10 @@ main{
 .color-body {
     background-color: rgb(255, 228, 196);
 }
+
+
+.imagen-grilla {
+  height: 200px; /* o el alto que prefieras */
+  object-fit: cover;
+  width: 100%;
+}
