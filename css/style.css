@@ -18,6 +18,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #F5F0E6;
 }
 
 h1,
@@ -202,5 +203,58 @@ main {
 
 .OVH {
   border-radius: 8px 8px 0 0;
+}
 
+/*opciones recetas*/
+
+.circle {
+  border: 2px solid black;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.img-options {
+  width: 250px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.div-options {
+  width: 250px ;
+  height: auto;
+  display: block;  /* Para que tome el ancho real de la imagen */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 25px;
+  color: #454545b9;
+}
+
+.img-options:hover + .text {
+  color: #222324;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+}
+
+.baner {
+  background-image: url('https://images.pexels.com/photos/4099123/pexels-photo-4099123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Poné acá la ruta de tu imagen */
+  background-size: cover;       
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: #F5F0E6;               
+  /* Opcional: para que el div tenga altura y se note el fondo */
+  min-height: 250px;            
+  display: flex;                
+  align-items: center;          
+  justify-content: center;    
+  text-align: center;          
+  padding: 20px;
 }
