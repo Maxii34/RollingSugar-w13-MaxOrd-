@@ -156,6 +156,9 @@ main {
  background-color: #222324;
  color: #fff;
  font-size: 1rem;
+ text-decoration: none;
+ display: flex;
+ justify-content: center;
  padding: .5rem 1rem;
  position: absolute;
  left: 50%;
@@ -175,6 +178,11 @@ main {
 }
 
 /*Hover*/
+.card-button:hover {
+  color: #3498db;
+}
+
+
 .cardc:hover {
  border-color: #0b1c2eb4;
  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.25);
