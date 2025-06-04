@@ -67,7 +67,7 @@ main {
 }
 
 .zoom-hover:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
 .img-ingredientes {
@@ -190,4 +190,9 @@ main {
   height: 230px;
   border-radius: 8px 8px 0 0;
   object-fit: cover;
+}
+
+.OVH {
+  border-radius: 8px 8px 0 0;
+
 }
