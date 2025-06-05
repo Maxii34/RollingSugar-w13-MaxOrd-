@@ -72,7 +72,11 @@
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/sobrenosotros.html"
+                      >Sobre nosotros</a
+                    >
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -122,7 +126,7 @@
             <div class="modal-content">
               <!-- ENCABEZADO -->
               <div class="modal-header">
-                <h5 class="modal-title" id="miModalLabel">Título del Modal</h5>
+                <h5 class="modal-title" id="miModalLabel">Iniciar Sesión</h5>
                 <button
                   type="button"
                   class="btn-close"
@@ -130,14 +134,62 @@
                   aria-label="Cerrar"
                 ></button>
               </div>
-
-              <!-- CUERPO DEL MODAL -->
+              <!--FORMULARIO -->
               <div class="modal-body">
-                Acá va el contenido del modal. Podés poner texto, imágenes,
-                listas, lo que quieras.
+                <form action="login.php" method="POST" novalidate>
+                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >Correo electrónico:</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      minlength="6"
+                      maxlength="50"
+                      placeholder="Ejemplo@email.com"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      required
+                      minlength="6"
+                      maxlength="20"
+                      placeholder="Contraseña"
+                    />
+                  </div>
+
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="recordarme"
+                      name="recordarme"
+                    />
+                    <label class="form-check-label" for="recordarme"
+                      >Recordarme</label
+                    >
+                  </div>
+
+                  <button type="submit" class="btn btn-dark w-100">
+                    Entrar
+                  </button>
+                  <div class="text-center">
+                    <b>¿No tienes una cuenta? </b>
+                    <a href="/pages/error404.html">Regístrate</a>
+                  </div>
+                </form>
               </div>
 
-              <!-- PIE DEL MODAL (opcional) -->
+              <!-- PIE DEL MODAL -->
               <div class="modal-footer">
                 <button
                   type="button"
@@ -153,13 +205,13 @@
       </section>
 
       <!--Video-->
-      <section>
+      <section class="container-fluid">
         <video
           src="./video/852375-hd_1920_1080_24fps.mp4"
           autoplay
           loop
           muted
-          class="w-100"
+          class="video-css"
         >
           Tu navegador no soporta la reproducción de video.
         </video>
@@ -170,112 +222,130 @@
         <h1 class="text-center display-5">Elegí qué querés cocinar</h1>
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3 my-3">
-            <div class="">
+            <div class="div-options">
               <a
                 href="./pages/recetas.html"
                 class="text-reset text-decoration-none"
               >
                 <img
                   src="https://images.unsplash.com/photo-1604953781841-004f1848ed3d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWxmYWpvcmVzfGVufDB8fDB8fHww"
-                  class="rounded-circle img-category cards"
+                  class="rounded-circle img-options cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
-                <h4 class="text-center mt-2 text-secondary">Alfajores</h4>
+                <h4 class="text">Alfajores</h4>
               </a>
             </div>
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
-            <div class="">
+            <div class="div-options">
               <a
                 href="/pages/error404.html"
                 class="text-reset text-decoration-none"
               >
                 <img
                   src="https://media.istockphoto.com/id/183382780/es/foto/bud%C3%ADn-de.jpg?b=1&s=612x612&w=0&k=20&c=wwxiAo4xDZ86jpgfO4kkTEoiPXqLFgtcNPkr_z9Soak="
-                  class="rounded-circle img-category cards"
+                  class="rounded-circle img-options cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
-                <h4 class="text-center mt-2 text-secondary">Budin</h4>
+                <h4 class="text">Budin</h4>
               </a>
             </div>
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
-            <div class="">
-              <a href="#" class="text-reset text-decoration-none">
+            <div class="div-options">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/30388621/pexels-photo-30388621/free-photo-of-pastelitos-de-chispas-de-chocolate.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards"
+                  class="rounded-circle img-options cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
-                <h4 class="text-center mt-2 text-secondary">Muffins</h4>
+                <h4 class="text">Muffins</h4>
               </a>
             </div>
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
-            <div class="">
-              <a href="#" class="text-reset text-decoration-none">
+            <div class="div-options">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/30739082/pexels-photo-30739082/free-photo-of-pastel-de-capas-de-fresas-con-glaseado-de-crema-batida.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards"
+                  class="rounded-circle img-options cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
-                <h4 class="text-center mt-2 text-secondary">Tortas y tartas</h4>
+                <h4 class="text">Tortas y tartas</h4>
               </a>
             </div>
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
-            <div class="">
-              <a href="#" class="text-reset text-decoration-none">
+            <div class="div-options">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards"
+                  class="rounded-circle img-options cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
-                <h4 class="text-center mt-2 text-secondary">Postres</h4>
+                <h4 class="text">Postres</h4>
               </a>
             </div>
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
-            <div class="">
-              <a href="#" class="text-reset text-decoration-none">
+            <div class="div-options">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/20872589/pexels-photo-20872589/free-photo-of-cafe-flores-mesa-tazas.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards"
+                  class="rounded-circle img-options cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
-                <h4 class="text-center mt-2 text-secondary">Para el té</h4>
+                <h4 class="text">Para el té</h4>
               </a>
             </div>
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
-            <div class="">
-              <a href="#" class="text-reset text-decoration-none">
+            <div class="div-options">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/4110541/pexels-photo-4110541.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards"
+                  class="rounded-circle img-options cards"
                   loading="lazy"
                   alt="Galletas"
                 />
-                <h4 class="text-center mt-2 text-secondary">Galletas</h4>
+                <h4 class="text">Galletas</h4>
               </a>
             </div>
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
-            <div class="">
-              <a href="#" class="text-reset text-decoration-none">
+            <div class="div-options">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/2280545/pexels-photo-2280545.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards"
+                  class="rounded-circle img-options cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
-                <h4 class="text-center mt-2 text-secondary">Otras recetas</h4>
+                <h4 class="text">Otras recetas</h4>
               </a>
             </div>
           </div>
@@ -296,7 +366,7 @@
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3 mt-3">
             <div class="card overflow-hidden shadow cards">
-              <a href="#">
+              <a href="/pages/error404.html">
                 <img
                   src="https://images.pexels.com/photos/2693447/pexels-photo-2693447.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="card-img-top zoom-hover imagen-grilla"
@@ -308,7 +378,7 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 mt-3">
             <div class="card overflow-hidden shadow cards">
-              <a href="#">
+              <a href="/pages/error404.html">
                 <img
                   src="https://images.pexels.com/photos/13471546/pexels-photo-13471546.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="card-img-top zoom-hover imagen-grilla"
@@ -320,7 +390,7 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 mt-3">
             <div class="card overflow-hidden shadow cards">
-              <a href="#">
+              <a href="/pages/error404.html">
                 <img
                   src="https://images.pexels.com/photos/7669770/pexels-photo-7669770.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="card-img-top zoom-hover imagen-grilla"
@@ -332,7 +402,7 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 mt-3">
             <div class="card overflow-hidden shadow cards">
-              <a href="#">
+              <a href="/pages/error404.html">
                 <img
                   src="https://images.pexels.com/photos/14915782/pexels-photo-14915782.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="card-img-top zoom-hover imagen-grilla"
@@ -344,7 +414,7 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
             <div class="card overflow-hidden shadow cards">
-              <a href="#">
+              <a href="/pages/error404.html">
                 <img
                   src="https://images.pexels.com/photos/4110541/pexels-photo-4110541.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="card-img-top zoom-hover imagen-grilla"
@@ -356,7 +426,7 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
             <div class="card overflow-hidden shadow cards">
-              <a href="">
+              <a href="/pages/error404.html">
                 <img
                   src="https://images.pexels.com/photos/29483168/pexels-photo-29483168/free-photo-of-magdalenas-variadas-de-colores-en-una-caja-de-madera.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="card-img-top zoom-hover imagen-grilla"
@@ -368,7 +438,7 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
             <div class="card overflow-hidden shadow cards">
-              <a href="#">
+              <a href="/pages/error404.html">
                 <img
                   src="https://images.pexels.com/photos/28260046/pexels-photo-28260046/free-photo-of-panqueques.jpeg?auto=compress&cs=tinysrgb&w=600"
                   loading="lazy"
@@ -380,7 +450,7 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
             <div class="card overflow-hidden shadow cards">
-              <a href="#">
+              <a href="/pages/error404.html">
                 <img
                   src="https://images.pexels.com/photos/30147974/pexels-photo-30147974/free-photo-of-cafe-helado-con-cobertura-de-galleta-sobre-una-mesa-de-madera.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="card-img-top zoom-hover imagen-grilla"
@@ -418,7 +488,9 @@
               <a href="#" class="text-white text-decoration-none">Productos</a>
             </li>
             <li class="text-lg-start text-md-center my-2">
-              <a href="#" class="text-white text-decoration-none"
+              <a
+                href="/pages/sobrenosotros.html"
+                class="text-white text-decoration-none"
                 >Sobre nosotros</a
               >
             </li>

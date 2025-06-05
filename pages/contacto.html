@@ -72,7 +72,11 @@
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/sobrenosotros.html"
+                      >Sobre nosotros</a
+                    >
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -103,96 +107,195 @@
     </header>
     <main class="container">
       <section>
-          <div class="container my-5">
-            <div class="row justify-content-center">
-              <div class=" col-12 col-md-6 col-lg-6 order-2 order-md-1 order-lg-1">
-                <div class="card Sombra rounded-4">
-                  <div class="card-body p-4">
-                    <h2 class="mb-4 text-center">Formulario de Contacto</h2>
-                    <form>
-                      <div class="mb-3">
-                        <label for="nombre" class="form-label"
-                          >Nombre completo*</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="nombre"
-                          name="nombre"
-                          placeholder="Nombre Completo"
-                          minlength="3"
-                          maxlength="80"
-                          required
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="email" class="form-label"
-                          >Correo electrónico*</label
-                        >
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          name="email"
-                          placeholder="Correo electrónico"
-                          minlength="5"
-                          maxlength="100"
-                          required
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="telefono" class="form-label"
-                          >Teléfono*</label
-                        >
-                        <input
-                          type="tel"
-                          class="form-control"
-                          id="telefono"
-                          name="telefono"
-                          placeholder="+54 381 787-6537"
-                          minlength="7"
-                          maxlength="20"
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea
-                          class="form-control"
-                          id="mensaje"
-                          name="mensaje"
-                          rows="2"
-                          placeholder="Deja tu mensaje aqui."
-                          minlength="10"
-                          maxlength="400"
-                          required
-                        ></textarea>
-                      </div>
-
-                      <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-dark">
-                          Enviar
-                        </button>
-                      </div>
-                      <a href="/pages/error404.html">Registrate</a>
-                    </form>
-                  </div>
-                </div>
+        <!--Modal-->
+        <div
+          class="modal fade"
+          id="miModal"
+          tabindex="-1"
+          aria-labelledby="miModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <!-- ENCABEZADO -->
+              <div class="modal-header">
+                <h5 class="modal-title" id="miModalLabel">Iniciar Sesión</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
               </div>
-              <div class="col-12 col-md-6 col-lg-6 order-1 order-md-2 order-lg-2">
-                <div class="overflow-hidden Sombra rounded">
-                  <img src="https://images.pexels.com/photos/1739748/pexels-photo-1739748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="w-100 h-75 rounded zoom-hover" loading="lazy">
-                </div>
-                  <div class="">
-                  <h5></h5>
-                  <p>Si quieres saber más sobre nuestras exquisitas recetas, productos y creaciones únicas, no dudes en ponerte en contacto. Completa el formulario y nuestro equipo estará encantado de responderte con todo el cariño y dulzura que mereces. </p>
-                  <b class="bg-dark text-light rounded-3 py-1 px-1 Sombra">¡Estamos aquí para hacer tus momentos aún más dulces! 🍬</b>
-                </div>
+              <!--FORMULARIO -->
+              <div class="modal-body">
+                <form action="login.php" method="POST" novalidate>
+                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >Correo electrónico:</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      minlength="6"
+                      maxlength="50"
+                      placeholder="Ejemplo@email.com"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      required
+                      minlength="6"
+                      maxlength="20"
+                      placeholder="Contraseña"
+                    />
+                  </div>
+
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="recordarme"
+                      name="recordarme"
+                    />
+                    <label class="form-check-label" for="recordarme"
+                      >Recordarme</label
+                    >
+                  </div>
+
+                  <button type="submit" class="btn btn-dark w-100">
+                    Entrar
+                  </button>
+                  <div class="text-center">
+                    <b>¿No tienes una cuenta? </b>
+                    <a href="">Regístrate</a>
+                  </div>
+                </form>
+              </div>
+
+              <!-- PIE DEL MODAL -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section>
+        <div class="container my-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-6 order-2 order-md-1 order-lg-1">
+              <div class="card Sombra rounded-4">
+                <div class="card-body p-4">
+                  <h2 class="mb-4 text-center">Formulario de Contacto</h2>
+                  <form>
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label"
+                        >Nombre completo*</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Nombre Completo"
+                        minlength="3"
+                        maxlength="80"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >Correo electrónico*</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Correo electrónico"
+                        minlength="5"
+                        maxlength="100"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="telefono" class="form-label">Teléfono*</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="+54 381 787-6537"
+                        minlength="7"
+                        maxlength="20"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="mensaje" class="form-label">Mensaje</label>
+                      <textarea
+                        class="form-control"
+                        id="mensaje"
+                        name="mensaje"
+                        rows="2"
+                        placeholder="Deja tu mensaje aqui."
+                        minlength="10"
+                        maxlength="400"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                      <button type="submit" class="btn btn-dark">Enviar</button>
+                    </div>
+                    <a href="/pages/error404.html">Registrate</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 order-1 order-md-2 order-lg-2">
+              <div class="overflow-hidden Sombra rounded">
+                <img
+                  src="https://images.pexels.com/photos/1739748/pexels-photo-1739748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="w-100 h-75 rounded zoom-hover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="">
+                <h5></h5>
+                <p>
+                  Si quieres saber más sobre nuestras exquisitas recetas,
+                  productos y creaciones únicas, no dudes en ponerte en
+                  contacto. Completa el formulario y nuestro equipo estará
+                  encantado de responderte con todo el cariño y dulzura que
+                  mereces.
+                </p>
+                <b class="bg-dark text-light rounded-3 py-1 px-1 Sombra"
+                  >¡Estamos aquí para hacer tus momentos aún más dulces! 🍬</b
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="container-fluid bg-dark mp-4 text-center text-light">
@@ -211,21 +314,39 @@
 
           <ul class="list-unstyled">
             <li class="text-lg-start text-md-center my-2">
-              <a href="/pages/error404.html" class="text-white text-decoration-none">Recetas</a>
+              <a
+                href="/pages/error404.html"
+                class="text-white text-decoration-none"
+                >Recetas</a
+              >
             </li>
             <li class="text-lg-start text-md-center my-2">
-              <a href="/pages/error404.html" class="text-white text-decoration-none">Comunidad</a>
+              <a
+                href="/pages/error404.html"
+                class="text-white text-decoration-none"
+                >Comunidad</a
+              >
             </li>
             <li class="text-lg-start text-md-center my-2">
-              <a href="/pages/error404.html" class="text-white text-decoration-none">Productos</a>
+              <a
+                href="/pages/error404.html"
+                class="text-white text-decoration-none"
+                >Productos</a
+              >
             </li>
             <li class="text-lg-start text-md-center my-2">
-              <a href="#" class="text-white text-decoration-none"
+              <a
+                href="/pages/sobrenosotros.html"
+                class="text-white text-decoration-none"
                 >Sobre nosotros</a
               >
             </li>
             <li class="text-lg-start text-md-center my-2">
-              <a href="/pages/error404.html" class="text-white text-decoration-none">Sucursales</a>
+              <a
+                href="/pages/error404.html"
+                class="text-white text-decoration-none"
+                >Sucursales</a
+              >
             </li>
           </ul>
         </div>
