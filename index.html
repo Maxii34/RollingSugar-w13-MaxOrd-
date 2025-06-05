@@ -72,7 +72,11 @@
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="/pages/sobrenosotros.html">Sobre nosotros</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/sobrenosotros.html"
+                      >Sobre nosotros</a
+                    >
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -122,7 +126,7 @@
             <div class="modal-content">
               <!-- ENCABEZADO -->
               <div class="modal-header">
-                <h5 class="modal-title" id="miModalLabel">Título del Modal</h5>
+                <h5 class="modal-title" id="miModalLabel">Iniciar Sesión</h5>
                 <button
                   type="button"
                   class="btn-close"
@@ -130,14 +134,62 @@
                   aria-label="Cerrar"
                 ></button>
               </div>
-
-              <!-- CUERPO DEL MODAL -->
+              <!--FORMULARIO -->
               <div class="modal-body">
-                Acá va el contenido del modal. Podés poner texto, imágenes,
-                listas, lo que quieras.
+                <form action="login.php" method="POST" novalidate>
+                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >Correo electrónico:</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      minlength="6"
+                      maxlength="50"
+                      placeholder="Ejemplo@email.com"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      required
+                      minlength="6"
+                      maxlength="20"
+                      placeholder="Contraseña"
+                    />
+                  </div>
+
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="recordarme"
+                      name="recordarme"
+                    />
+                    <label class="form-check-label" for="recordarme"
+                      >Recordarme</label
+                    >
+                  </div>
+
+                  <button type="submit" class="btn btn-dark w-100">
+                    Entrar
+                  </button>
+                  <div class="text-center">
+                    <b>¿No tienes una cuenta? </b>
+                    <a href="">Regístrate</a>
+                  </div>
+                </form>
               </div>
 
-              <!-- PIE DEL MODAL (opcional) -->
+              <!-- PIE DEL MODAL -->
               <div class="modal-footer">
                 <button
                   type="button"
@@ -153,13 +205,13 @@
       </section>
 
       <!--Video-->
-      <section>
+      <section class="container-fluid">
         <video
           src="./video/852375-hd_1920_1080_24fps.mp4"
           autoplay
           loop
           muted
-          class="w-100"
+          class="video-css"
         >
           Tu navegador no soporta la reproducción de video.
         </video>
@@ -203,7 +255,10 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
             <div class="div-options">
-              <a href="/pages/error404.html" class="text-reset text-decoration-none">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/30388621/pexels-photo-30388621/free-photo-of-pastelitos-de-chispas-de-chocolate.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="rounded-circle img-options cards"
@@ -216,7 +271,10 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
             <div class="div-options">
-              <a href="/pages/error404.html" class="text-reset text-decoration-none">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/30739082/pexels-photo-30739082/free-photo-of-pastel-de-capas-de-fresas-con-glaseado-de-crema-batida.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="rounded-circle img-options cards"
@@ -229,7 +287,10 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
             <div class="div-options">
-              <a href="/pages/error404.html" class="text-reset text-decoration-none">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="rounded-circle img-options cards"
@@ -242,7 +303,10 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
             <div class="div-options">
-              <a href="/pages/error404.html" class="text-reset text-decoration-none">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/20872589/pexels-photo-20872589/free-photo-of-cafe-flores-mesa-tazas.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="rounded-circle img-options cards"
@@ -255,7 +319,10 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
             <div class="div-options">
-              <a href="/pages/error404.html" class="text-reset text-decoration-none">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/4110541/pexels-photo-4110541.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="rounded-circle img-options cards"
@@ -268,7 +335,10 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
             <div class="div-options">
-              <a href="/pages/error404.html" class="text-reset text-decoration-none">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://images.pexels.com/photos/2280545/pexels-photo-2280545.jpeg?auto=compress&cs=tinysrgb&w=600"
                   class="rounded-circle img-options cards"
@@ -418,7 +488,9 @@
               <a href="#" class="text-white text-decoration-none">Productos</a>
             </li>
             <li class="text-lg-start text-md-center my-2">
-              <a href="/pages/sobrenosotros.html" class="text-white text-decoration-none"
+              <a
+                href="/pages/sobrenosotros.html"
+                class="text-white text-decoration-none"
                 >Sobre nosotros</a
               >
             </li>

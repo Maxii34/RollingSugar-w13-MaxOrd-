@@ -106,6 +106,96 @@
       </nav>
     </header>
     <main>
+      <section>
+        <!--Modal-->
+        <div
+          class="modal fade"
+          id="miModal"
+          tabindex="-1"
+          aria-labelledby="miModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <!-- ENCABEZADO -->
+              <div class="modal-header">
+                <h5 class="modal-title" id="miModalLabel">Iniciar Sesión</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+              <!--FORMULARIO -->
+              <div class="modal-body">
+                <form action="login.php" method="POST" novalidate>
+                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >Correo electrónico:</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      minlength="6"
+                      maxlength="50"
+                      placeholder="Ejemplo@email.com"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      required
+                      minlength="6"
+                      maxlength="20"
+                      placeholder="Contraseña"
+                    />
+                  </div>
+
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="recordarme"
+                      name="recordarme"
+                    />
+                    <label class="form-check-label" for="recordarme"
+                      >Recordarme</label
+                    >
+                  </div>
+
+                  <button type="submit" class="btn btn-dark w-100">
+                    Entrar
+                  </button>
+                  <div class="text-center">
+                    <b>¿No tienes una cuenta? </b>
+                    <a href="">Regístrate</a>
+                  </div>
+                </form>
+              </div>
+
+              <!-- PIE DEL MODAL -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="container-fluid">
         <h1 class="text-center my-3 py-2">Recetas de Budines</h1>
         <div class="row">

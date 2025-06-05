@@ -389,3 +389,18 @@ main {
   line-height: 1rem;
   color: rgba(156, 163, 175, 1);
 }
+
+/*Video de index*/
+
+.video-css {
+  width: 100%;
+  height: auto;
+  max-height: 330px; 
+  object-fit: cover;
+  display: block;
+}
+
+.form-check-input:checked {
+  background-color: #201b1b;
+  border-color: #000;
+}
