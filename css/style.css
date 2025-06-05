@@ -258,3 +258,10 @@ main {
   text-align: center;          
   padding: 20px;
 }
+
+/*Botones navbar*/
+.logo {
+  display: block;
+  max-height: 190px;
+  width: auto;
+}

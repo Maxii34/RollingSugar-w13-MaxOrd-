@@ -20,11 +20,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-secondary shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="/index.html"
-            >Rolling Sugar <i class="bi bi-box"></i
-          ></a>
+          <a class="navbar-brand fw-bold" href="/index.html">Rolling Sugar</a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -36,7 +35,9 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Menú principal -->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
@@ -49,18 +50,108 @@
               <li class="nav-item">
                 <a class="nav-link" href="/pages/recetas.html">Recetas</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Más
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/pages/productos.html"
+                      >Productos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/contacto.html"
+                      >Contacto</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                </ul>
               </li>
             </ul>
+
+            <!-- Formulario de búsqueda y login -->
+            <form class="d-flex align-items-center ms-lg-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-secondary me-2" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+              <button
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#miModal"
+                type="button"
+              >
+                Login
+              </button>
+              <a
+                href="https://github.com/Maxii34"
+                target="_blank"
+                class="ms-3 text-dark"
+              >
+                <i class="bi bi-github fs-4"></i>
+              </a>
+            </form>
           </div>
         </div>
       </nav>
     </header>
     <main class="container">
+      <section>
+        <!--Modal-->
+        <div
+          class="modal fade"
+          id="miModal"
+          tabindex="-1"
+          aria-labelledby="miModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <!-- ENCABEZADO -->
+              <div class="modal-header">
+                <h5 class="modal-title" id="miModalLabel">Título del Modal</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+
+              <!-- CUERPO DEL MODAL -->
+              <div class="modal-body">
+                Acá va el contenido del modal. Podés poner texto, imágenes,
+                listas, lo que quieras.
+              </div>
+
+              <!-- PIE DEL MODAL (opcional) -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!--Video-->
       <section>
         <video
@@ -68,7 +159,7 @@
           autoplay
           loop
           muted
-          class="w-100 "
+          class="w-100"
         >
           Tu navegador no soporta la reproducción de video.
         </video>
@@ -96,10 +187,13 @@
           </div>
           <div class="col-12 col-md-4 col-lg-3 my-3">
             <div class="">
-              <a href="/pages/error404.html" class="text-reset text-decoration-none">
+              <a
+                href="/pages/error404.html"
+                class="text-reset text-decoration-none"
+              >
                 <img
                   src="https://media.istockphoto.com/id/183382780/es/foto/bud%C3%ADn-de.jpg?b=1&s=612x612&w=0&k=20&c=wwxiAo4xDZ86jpgfO4kkTEoiPXqLFgtcNPkr_z9Soak="
-                  class="rounded-circle img-category cards "
+                  class="rounded-circle img-category cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
@@ -112,7 +206,7 @@
               <a href="#" class="text-reset text-decoration-none">
                 <img
                   src="https://images.pexels.com/photos/30388621/pexels-photo-30388621/free-photo-of-pastelitos-de-chispas-de-chocolate.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards "
+                  class="rounded-circle img-category cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
@@ -125,7 +219,7 @@
               <a href="#" class="text-reset text-decoration-none">
                 <img
                   src="https://images.pexels.com/photos/30739082/pexels-photo-30739082/free-photo-of-pastel-de-capas-de-fresas-con-glaseado-de-crema-batida.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards "
+                  class="rounded-circle img-category cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
@@ -138,7 +232,7 @@
               <a href="#" class="text-reset text-decoration-none">
                 <img
                   src="https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards "
+                  class="rounded-circle img-category cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
@@ -151,7 +245,7 @@
               <a href="#" class="text-reset text-decoration-none">
                 <img
                   src="https://images.pexels.com/photos/20872589/pexels-photo-20872589/free-photo-of-cafe-flores-mesa-tazas.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards "
+                  class="rounded-circle img-category cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
@@ -164,7 +258,7 @@
               <a href="#" class="text-reset text-decoration-none">
                 <img
                   src="https://images.pexels.com/photos/4110541/pexels-photo-4110541.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards "
+                  class="rounded-circle img-category cards"
                   loading="lazy"
                   alt="Galletas"
                 />
@@ -177,7 +271,7 @@
               <a href="#" class="text-reset text-decoration-none">
                 <img
                   src="https://images.pexels.com/photos/2280545/pexels-photo-2280545.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="rounded-circle img-category cards "
+                  class="rounded-circle img-category cards"
                   loading="lazy"
                   alt="Alfajores"
                 />
@@ -299,16 +393,69 @@
         </div>
       </section>
     </main>
-    <footer class="bg-dark mp-4 text-center text-light">
-      <div>
-        <h5 class="my-2">Seguinos en:</h5>
-        <a href="#"><i class="bi bi-instagram text-light fs-2 me-2"></i></a>
-        <a href="#"><i class="bi bi-facebook text-light fs-2 me-2"></i></a>
-        <a href="#"><i class="bi bi-youtube text-light fs-2 me-2"></i></a>
-        <a href="#"><i class="bi bi-tiktok text-light fs-2 me-2"></i></a>
-      </div>
-      <div class="my-3 border-top">
-        <p class="my-3">&copy; Todos los derechos reservados</p>
+    <footer class="container-fluid bg-dark mp-4 text-center text-light">
+      <div class="row">
+        <div
+          class="col-12 col-md-4 col-lg-4 d-flex justify-content-center mb-3"
+        >
+          <img
+            src="/img/ChatGPT Image 4 jun 2025, 22_00_46.png"
+            alt="Logo Rolling Sugar"
+            class="logo"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <h5 class="my-2">Información:</h5>
+
+          <ul class="list-unstyled">
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">Recetas</a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">Comunidad</a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">Productos</a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">Sucursales</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-4">
+          <h5 class="my-2">Seguinos en:</h5>
+          <ul class="list-unstyled">
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="bi bi-instagram fs-5 me-2"></i> Instagram
+              </a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="bi bi-facebook fs-5 me-2"></i> Facebook
+              </a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="bi bi-youtube fs-5 me-2"></i> Youtube
+              </a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="bi bi-tiktok fs-5 me-2"></i> Tiktok
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="my-2 py-3 border-top text-center text-light">
+          <p class="mb-0">&copy; 2025 Todos los derechos reservados</p>
+        </div>
       </div>
     </footer>
     <script

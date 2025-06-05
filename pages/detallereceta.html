@@ -20,11 +20,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-secondary shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="../index.html"
-            >Rolling Sugar <i class="bi bi-box"></i
-          ></a>
+          <a class="navbar-brand fw-bold" href="/index.html">Rolling Sugar</a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -36,25 +35,68 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Menú principal -->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/recetas.html">Recetas</a>
+                <a class="nav-link" href="/pages/recetas.html">Recetas</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="../pages/contacto.html"
-                  >Contacto</a
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Más
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/pages/productos.html"
+                      >Productos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/contacto.html"
+                      >Contacto</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                </ul>
               </li>
             </ul>
+
+            <!-- Formulario de búsqueda y login -->
+            <form class="d-flex align-items-center ms-lg-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-secondary me-2" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+              <button
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#miModal"
+                type="button"
+              >
+                Login
+              </button>
+            </form>
           </div>
         </div>
       </nav>
@@ -207,16 +249,69 @@
         </div>
       </section>
     </main>
-    <footer class="bg-dark mp-4 text-center text-light">
-      <div>
-        <h5 class="my-2">Seguinos en:</h5>
-        <a href="#"><i class="bi bi-instagram text-light fs-2 me-2"></i></a>
-        <a href="#"><i class="bi bi-facebook text-light fs-2 me-2"></i></a>
-        <a href="#"><i class="bi bi-youtube text-light fs-2 me-2"></i></a>
-        <a href="#"><i class="bi bi-tiktok text-light fs-2 me-2"></i></a>
-      </div>
-      <div class="my-3 border-top">
-        <p class="my-3">&copy; Todos los derechos reservados</p>
+    <footer class="container-fluid bg-dark mp-4 text-center text-light">
+      <div class="row">
+        <div
+          class="col-12 col-md-4 col-lg-4 d-flex justify-content-center mb-3"
+        >
+          <img
+            src="/img/ChatGPT Image 4 jun 2025, 22_00_46.png"
+            alt="Logo Rolling Sugar"
+            class="logo"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <h5 class="my-2">Información:</h5>
+
+          <ul class="list-unstyled">
+            <li class="text-lg-start text-md-center my-2">
+              <a href="/pages/error404.html" class="text-white text-decoration-none">Recetas</a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="/pages/error404.html" class="text-white text-decoration-none">Comunidad</a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="/pages/error404.html" class="text-white text-decoration-none">Productos</a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="/pages/error404.html" class="text-white text-decoration-none">Sucursales</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-4">
+          <h5 class="my-2">Seguinos en:</h5>
+          <ul class="list-unstyled">
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="bi bi-instagram fs-5 me-2"></i> Instagram
+              </a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="bi bi-facebook fs-5 me-2"></i> Facebook
+              </a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="bi bi-youtube fs-5 me-2"></i> Youtube
+              </a>
+            </li>
+            <li class="text-lg-start text-md-center my-2">
+              <a href="#" class="text-white text-decoration-none">
+                <i class="bi bi-tiktok fs-5 me-2"></i> Tiktok
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="my-2 py-3 border-top text-center text-light">
+          <p class="mb-0">&copy; 2025 Todos los derechos reservados</p>
+        </div>
       </div>
     </footer>
     <script
