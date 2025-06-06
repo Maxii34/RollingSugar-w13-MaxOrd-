@@ -1,6 +1,6 @@
 # 🍰 RollingSugar - Blog de Recetas de Cocina
 **RollingSugar** es un sitio web centrado en la presentación de recetas de cocina en un formato claro, visual y atractivo. 
-Practica de maquetado con bootstrap y aprendimos los comandos de Git.
+
 ## 📝 Descripción General
 
 RollingSugar cuenta con:
