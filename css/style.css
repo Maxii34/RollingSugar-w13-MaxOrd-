@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap");
 
 :root {
-  --color-fondo: #fff0f5; 
-  --color-texto: #2e2e2e; 
+  --color-fondo: #fff0f5;
+  --color-texto: #2e2e2e;
   --color-destacado: #e75480;
   --color-secundario: #ffd700;
   --color-acento: #c71585;
@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #F5F0E6;
+  background-color: #f5f0e6;
 }
 
 h1,
@@ -57,7 +57,7 @@ main {
 .img-cuadrada {
   position: relative;
   width: 100%;
-  padding-top: 100%; /* Mantiene la proporción cuadrada */
+  padding-top: 100%;
   overflow: hidden;
 }
 
@@ -128,52 +128,52 @@ main {
 
 /*nuevos*/
 .cardc {
- width: auto;
- height: 294px;
- border-radius: 8px;
- background: #f5f5f5;
- position: relative;
- padding: 5px;
- border: 2px solid #c3c6ce;
- transition: 0.5s ease-out;
- overflow: visible;
+  width: auto;
+  height: 294px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 5px;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
 }
 
 .card-details {
- color: black;
- height: 100%;
- gap: .5em;
- display: grid;
- place-content: center;
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
 }
 
 .card-button {
- transform: translate(-50%, 125%);
- width: 60%;
- border-radius: 1rem;
- border: none;
- background-color: #222324;
- color: #fff;
- font-size: 1rem;
- text-decoration: none;
- display: flex;
- justify-content: center;
- padding: .5rem 1rem;
- position: absolute;
- left: 50%;
- bottom: 0;
- opacity: 0;
- transition: 0.3s ease-out;
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #222324;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
 }
 
 .text-bodyc {
- color: rgb(134, 134, 134);
+  color: rgb(134, 134, 134);
 }
 
 /*Text*/
 .text-titlec {
- font-size: 1.5em;
- font-weight: bold;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 /*Hover*/
@@ -181,15 +181,14 @@ main {
   color: #3498db;
 }
 
-
 .cardc:hover {
- border-color: #0b1c2eb4;
- box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.25);
+  border-color: #0b1c2eb4;
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .cardc:hover .card-button {
- transform: translate(-50%, 50%);
- opacity: 1;
+  transform: translate(-50%, 50%);
+  opacity: 1;
 }
 
 .card-image {
@@ -214,19 +213,55 @@ main {
   border-radius: 100%;
 }
 
+/*cards redondas a cuadradas e imagenes*/
+
 .img-options {
-  width: 250px;
+  max-width: 230px;
+  min-width: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
+  border-radius: 50%;
+  transition: 600ms;
+  &:hover {
+    border-radius: 30px;
+    transition: transform 0.6s ease;
+    transition: 600ms;
+  }
 }
 
 .div-options {
-  width: 250px ;
+  width: 230px;
   height: auto;
-  display: block;  /* Para que tome el ancho real de la imagen */
+  display: flex;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
+
+/*.vermas {
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+  color: #454545b9;
+  text-decoration: none;
+  font-family: "Playwrite DK Loopet", cursive;
+  transition: color 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    color: #39638d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease;
+  }
+}
+*/
+
+/*@media all and (max-width:767px) {
+  .img-options{
+    width: 230px;
+  }
+}
+*/
 
 .text {
   display: flex;
@@ -243,17 +278,17 @@ main {
 }
 
 .baner {
-  background-image: url('https://images.pexels.com/photos/4099123/pexels-photo-4099123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Poné acá la ruta de tu imagen */
-  background-size: cover;       
-  background-position: center; 
-  background-repeat: no-repeat; 
-  color: #F5F0E6;               
+  background-image: url("https://images.pexels.com/photos/4099123/pexels-photo-4099123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Poné acá la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f5f0e6;
   /* Opcional: para que el div tenga altura y se note el fondo */
-  min-height: 250px;            
-  display: flex;                
-  align-items: center;          
-  justify-content: center;    
-  text-align: center;          
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 20px;
 }
 
@@ -316,17 +351,19 @@ main {
   justify-content: flex-end;
   font-size: 0.75rem;
   line-height: 1rem;
-  color: rgba(156, 163, 175,1);
+  color: rgba(156, 163, 175, 1);
   margin: 8px 0 14px 0;
 }
 
-.forgot a,.signup a {
+.forgot a,
+.signup a {
   color: rgba(243, 244, 246, 1);
   text-decoration: none;
   font-size: 14px;
 }
 
-.forgot a:hover, .signup a:hover {
+.forgot a:hover,
+.signup a:hover {
   text-decoration: underline rgba(167, 139, 250, 1);
 }
 
@@ -393,7 +430,7 @@ main {
 .video-css {
   width: 100%;
   height: auto;
-  max-height: 330px; 
+  max-height: 330px;
   object-fit: cover;
   display: block;
 }
