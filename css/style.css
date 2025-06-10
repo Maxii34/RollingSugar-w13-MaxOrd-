@@ -1,17 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap");
 
 :root {
-  --color-fondo: #fff0f5; /* Fondo rosado suave */
-  --color-texto: #2e2e2e; /* Texto oscuro neutro */
-  --color-destacado: #e75480; /* Rosa frambuesa (botones, hover) */
-  --color-secundario: #ffd700; /* Amarillo dorado (detalles, íconos) */
-  --color-acento: #c71585; /* Magenta fuerte (llamados a la acción) */
-
-  --color-nav-bg: #c71585; /* Fondo del nav (magenta fuerte) */
-  --color-nav-text: #fff0f5; /* Texto claro en nav */
-
-  --color-footer-bg: #2e2e2e; /* Fondo del footer (oscuro elegante) */
-  --color-footer-text: #ffd700; /* Texto claro/dorado en footer */
+  --color-fondo: #fff0f5; 
+  --color-texto: #2e2e2e; 
+  --color-destacado: #e75480;
+  --color-secundario: #ffd700;
+  --color-acento: #c71585;
+  --color-nav-bg: #c71585;
+  --color-nav-text: #fff0f5;
+  --color-footer-bg: #2e2e2e;
+  --color-footer-text: #ffd700;
 }
 
 body {
